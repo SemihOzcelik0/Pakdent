@@ -1,0 +1,89 @@
+nav {
+  position: static;
+  opacity: 1; }
+  nav .nav-menu {
+    z-index: 5; }
+
+#projects {
+  padding: 4rem 0;
+  background-color: #eeeeee;
+  position: relative; }
+  #projects .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 3rem; }
+    #projects .container h2 {
+      grid-area: 1/1/1/5;
+      font-size: 4.5rem;
+      font-weight: 500;
+      letter-spacing: 0.5rem;
+      color: #222831; }
+    #projects .container .line__seperator {
+      grid-area: 2/1/2/5;
+      margin: 0 0 3rem; }
+    #projects .container .box {
+      opacity: 0;
+      transition: all 0.8s ease; }
+      #projects .container .box.show {
+        opacity: 1; }
+    #projects .container .card {
+      position: relative;
+      width: auto;
+      height: 27rem;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      border-radius: 2%;
+      overflow: hidden; }
+      #projects .container .card a img {
+        width: 100%;
+        height: 100%;
+        border-radius: 2%;
+        transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        #projects .container .card a img:hover {
+          transform: scale(104%); }
+      /* #projects .container .card::after {
+        position: absolute;
+        content: "";
+        display: block;
+        background-color: #393e46;
+        opacity: 0.8;
+        top: 0;
+        left: 0; 
+        width: 100%;
+        height: 100%;
+        transform: translate(-120%, -140%) rotate(135deg);
+        transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+      #projects .container .card:hover::after {
+        transform: translate(-65%, -65%) rotate(135deg); } */
+
+@media (max-width: 1200px) {
+  #projects .container {
+    grid-template-columns: repeat(3, 1fr); }
+    #projects .container h2 {
+      grid-area: 1/1/1/4;
+      font-size: 4rem; }
+    #projects .container .line__seperator {
+      grid-area: 2/1/2/4; } }
+
+@media (max-width: 992px) {
+  #projects .container {
+    grid-template-columns: repeat(2, 1fr); }
+    #projects .container h2 {
+      grid-area: 1/1/1/3;
+      font-size: 3.7rem; }
+    #projects .container .line__seperator {
+      grid-area: 2/1/2/3; } }
+
+@media (max-width: 576px) {
+  #projects .container {
+    grid-template-columns: repeat(1, 1fr); }
+    #projects .container h2 {
+      grid-area: 1/1/1/2;
+      font-size: 3.4rem; }
+    #projects .container .line__seperator {
+      grid-area: 2/1/2/2; } }
+
+@media (max-width: 400px) {
+  #projects .container h2 {
+    font-size: 2.5rem; } }

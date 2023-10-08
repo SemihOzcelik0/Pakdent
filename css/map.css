@@ -1,0 +1,127 @@
+nav {
+  position: static;
+  opacity: 1; }
+
+.mapdiv .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 0; }
+  .mapdiv .container h2 {
+    text-align: center;
+    margin-bottom: 6rem;
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    color: #393e46; }
+  .mapdiv .container svg {
+    width: 70%;
+    transition: all 0.5s; }
+  .mapdiv .container path {
+    fill: #393e46;
+    stroke: #eeeeee;
+    stroke-width: 2px;
+    transition: all 0.3s; }
+    .mapdiv .container path:hover {
+      transform: scale(100.6%); }
+  .mapdiv .container .active {
+    fill: #00adb5; }
+  .mapdiv .container .contact {
+    margin-top: 6rem; }
+    .mapdiv .container .contact h4 {
+      font-size: 2.4rem;
+      color: #393e46;
+      display: inline-block;
+      font-weight: 500; }
+    .mapdiv .container .contact a {
+      position: relative;
+      text-decoration: none;
+      font-size: 2.3rem;
+      padding: 1rem 2rem;
+      color: #222831;
+      margin: 0 3rem;
+      transition: all 0.8s ease; }
+      .mapdiv .container .contact a::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        border-top: 2px solid #00adb5;
+        border-right: 2px solid #00adb5;
+        transition: all 0.8s ease; }
+      .mapdiv .container .contact a::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 20px;
+        height: 20px;
+        border-bottom: 2px solid #00adb5;
+        border-left: 2px solid #00adb5;
+        transition: all 0.8s ease; }
+      .mapdiv .container .contact a:hover::before, .mapdiv .container .contact a:hover::after {
+        width: 97%;
+        height: 96%; }
+      .mapdiv .container .contact a:hover {
+        background-color: #393e46;
+        color: #eeeeee;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
+
+@media (max-width: 1200px) {
+  .mapdiv .container h2 {
+    font-size: 3.5rem; }
+  .mapdiv .container svg {
+    width: 75%; }
+  .mapdiv .container .contact h4 {
+    font-size: 2.2rem; }
+  .mapdiv .container .contact a {
+    font-size: 2.1rem;
+    margin: 2.5rem; } }
+
+@media (max-width: 992px) {
+  .mapdiv .container h2 {
+    font-size: 3rem; }
+  .mapdiv .container svg {
+    width: 80%; }
+  .mapdiv .container .contact h4 {
+    font-size: 2rem; }
+  .mapdiv .container .contact a {
+    font-size: 1.9rem;
+    margin: 2.2rem; } }
+
+@media (max-width: 768px) {
+  .mapdiv .container h2 {
+    font-size: 2.5rem; }
+  .mapdiv .container svg {
+    width: 85%; }
+  .mapdiv .container .contact h4 {
+    font-size: 1.8rem; }
+  .mapdiv .container .contact a {
+    font-size: 1.7rem;
+    margin: 1.8rem; } }
+
+@media (max-width: 576px) {
+  .mapdiv .container h2 {
+    font-size: 2rem; }
+  .mapdiv .container svg {
+    width: 90%; }
+  .mapdiv .container .contact h4 {
+    font-size: 1.5rem; }
+  .mapdiv .container .contact a {
+    font-size: 1.4rem;
+    margin: 1.6rem; } }
+
+@media (max-width: 400px) {
+  .mapdiv .container h2 {
+    font-size: 1.5rem; }
+  .mapdiv .container svg {
+    width: 95%; }
+  .mapdiv .container .contact h4 {
+    font-size: 1.1rem; }
+  .mapdiv .container .contact a {
+    font-size: 1.1rem;
+    margin: 1.4rem; } }
